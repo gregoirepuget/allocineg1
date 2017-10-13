@@ -35,6 +35,9 @@
     }
     ?>
   </div>
+  <div class="pagination">
+    <?php wp_pagenavi(); ?>
+  </div>
 </div> <!-- /content -->
 
 <?php get_footer(); //appel du template footer.php ?>
