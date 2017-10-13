@@ -29,5 +29,10 @@ header#header{
   float:left;
   max-width: 250px;
   height: auto;
-  paddging-right:20px;
+  padding-right:20px;
+}
+
+.thumbnail img{
+  max-width:100%;
+  height: auto;
 }
