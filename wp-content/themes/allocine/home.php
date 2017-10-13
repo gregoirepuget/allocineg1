@@ -26,7 +26,7 @@
             if(has_post_thumbnail())
             {
               echo '<div class="thumbnail">';
-                the_post_thumbnail("hub_article_thumbnail");
+                the_post_thumbnail("hub_film_thumbnail");
               echo '</div>';
             }
          ?>
@@ -43,7 +43,7 @@
 
   </div>
   <div class="pagination">
-    <?php wp_pagenavi(); ?>
+    <?php wp_pagenavi(array( 'query' => $the_query )); ?>
   </div>
 </div> <!-- /content -->
 
