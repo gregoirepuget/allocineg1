@@ -1,0 +1,6 @@
+'.text.php':
+   'WordPress create header.php':
+     'prefix': 'fp_header.php'
+     'body': """
+<a href="<?php bloginfo("url"); ?>" title="<?php bloginfo('url'); ?>"><?php bloginfo('url'); ?></a>
+"""
