@@ -15,5 +15,12 @@
     </head>
     <body <?php body_class(); ?>>
         <header id="header">
+          <div class="container">
+            <div class="col-sm-12">
+              <h1><?php bloginfo("title"); ?></h1>
+              <h2><?php bloginfo( "description" );?></h2>
+            </div>
+
+          </div>
         <!-- Tout le contenu de l entête de mon site -->
         </header>

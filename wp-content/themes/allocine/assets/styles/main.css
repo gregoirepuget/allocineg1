@@ -1,3 +1,26 @@
-*{
-  color:red;
+body{
+  margin:0;
+  font-size:16px;
+  font-family: 'Arapey', serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Hammersmith One', sans-serif;
+  text-transform: uppercase;
+  color:#f1c40f;
+}
+
+a{
+  color:#f1c40f;
+  text-decoration: none;
+}
+a:hover{
+  color:#f39c12;
+  text-decoration: underline;
+}
+
+header#header{
+  background:#ecf0f1;
+  padding-top:30px;
+  padding-bottom:30px;
 }
