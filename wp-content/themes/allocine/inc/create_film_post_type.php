@@ -37,5 +37,25 @@ $labels = array(
     );
 
     register_post_type($post_type, $args );
+
+    $taxonomy = "genre";
+    $object_type = array("film");
+    $args = array(
+          'label' => __( 'Genre' ),
+          'rewrite' => array( 'slug' => 'genre' ),
+          'hierarchical' => true,
+      );
+    register_taxonomy( $taxonomy, $object_type, $args );
+
+    $taxonomy = "annee";
+    $object_type = array("film");
+    $args = array(
+          'label' => __( 'Année de production' ),
+          'rewrite' => array( 'slug' => 'annee' ),
+          'hierarchical' => false,
+      );
+    register_taxonomy( $taxonomy, $object_type, $args );
+
+
 }
 add_action( 'init', 'ajout_custom_type_film' );
